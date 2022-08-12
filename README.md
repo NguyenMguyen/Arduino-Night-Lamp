@@ -5,5 +5,5 @@ A night lamp and a led only turn on when it's dark. And a LED changes color cont
 
 This project uses the FREERTOS library.
 
-#### Run and build
+## Run and build
 PlatformIO IDE
