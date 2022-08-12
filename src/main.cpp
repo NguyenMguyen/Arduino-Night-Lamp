@@ -15,8 +15,7 @@ TaskHandle_t task1_handle = NULL;
 
 void displayAllBasicColors()
 {
-  // Tắt toàn bộ các led - cái này dễ mà ha
-
+  // Tắt toàn bộ các led
   digitalWrite(RED_PIN, LOW);
   digitalWrite(GREEN_PIN, LOW);
   digitalWrite(BLUE_PIN, LOW);
@@ -24,7 +23,6 @@ void displayAllBasicColors()
   delay(DELAY_TIME);
 
   // Chỉ bật led đỏ
-
   digitalWrite(RED_PIN, HIGH);
   digitalWrite(GREEN_PIN, LOW);
   digitalWrite(BLUE_PIN, LOW);
@@ -32,7 +30,6 @@ void displayAllBasicColors()
   delay(DELAY_TIME);
 
   // Chỉ bật led xanh lá
-
   digitalWrite(RED_PIN, LOW);
   digitalWrite(GREEN_PIN, HIGH);
   digitalWrite(BLUE_PIN, LOW);
@@ -40,7 +37,6 @@ void displayAllBasicColors()
   delay(DELAY_TIME);
 
   // Chỉ bật led xanh dương
-
   digitalWrite(RED_PIN, LOW);
   digitalWrite(GREEN_PIN, LOW);
   digitalWrite(BLUE_PIN, HIGH);
@@ -48,7 +44,6 @@ void displayAllBasicColors()
   delay(DELAY_TIME);
 
   // Bật màu vàng bắng cách bật led đỏ và xanh
-
   digitalWrite(RED_PIN, HIGH);
   digitalWrite(GREEN_PIN, HIGH);
   digitalWrite(BLUE_PIN, LOW);
@@ -56,7 +51,6 @@ void displayAllBasicColors()
   delay(DELAY_TIME);
 
   // Xanh lam (Cyan) bằng cách bật led xanh lá và xanh dương
-
   digitalWrite(RED_PIN, LOW);
   digitalWrite(GREEN_PIN, HIGH);
   digitalWrite(BLUE_PIN, HIGH);
@@ -64,7 +58,6 @@ void displayAllBasicColors()
   delay(DELAY_TIME);
 
   // Tím (đỏ xanh dương)
-
   digitalWrite(RED_PIN, HIGH);
   digitalWrite(GREEN_PIN, LOW);
   digitalWrite(BLUE_PIN, HIGH);
@@ -72,8 +65,6 @@ void displayAllBasicColors()
   delay(DELAY_TIME);
 
   // Màu trắng (tất cả các led)
-  // Mình không hiểu nổi vụ con công tô màu cho con quạ :3, đáng lẻ phải ra màu trắng chứ, mà thế quái nào lại ra màu đen :3, chắc do con công pha màu kém quá :D
-
   digitalWrite(RED_PIN, HIGH);
   digitalWrite(GREEN_PIN, HIGH);
   digitalWrite(BLUE_PIN, HIGH);
@@ -106,8 +97,7 @@ void showRGB(int color)
     bluePWM = 255 - (color - 512); // blue sáng rồi lại tắt
   }
 
-  // rồi xuất xung ra và chơi thôi :3
-
+  // xuất xung ra
   analogWrite(RED_PIN, redPWM);
   analogWrite(BLUE_PIN, bluePWM);
   analogWrite(GREEN_PIN, greenPWM);
