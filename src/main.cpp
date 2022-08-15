@@ -108,7 +108,6 @@ void showSpectrum()
   for (int i = 0; i < 768; i++)
   {
     showRGB(i); // Call RGBspectrum() with our new x
-    //delay(10);  // Delay 10ms
     vTaskDelay(1);
   }
 }
@@ -134,7 +133,6 @@ void TaskMain(void *pvParameters) // This is a task.
     if (!l)
     {
       digitalWrite(OUT_PIN, HIGH);
-      // Serial.println("yes");
       state = 0;
     }
     else
